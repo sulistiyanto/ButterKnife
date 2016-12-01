@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
         int angka1 = Integer.parseInt(editText1.getText().toString());
         int angka2 = Integer.parseInt(editText2.getText().toString());
         int jumlah = angka1 + angka2;
-        txtHasil.setText("" + jumlah);
+        txtHasil.setText(""+ jumlah);
     }
 
     @Override
