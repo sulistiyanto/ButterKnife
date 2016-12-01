@@ -4,7 +4,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -17,7 +16,10 @@ public class MainActivity extends AppCompatActivity {
     @BindView(R.id.txtHasil) TextView txtHasil;
 
     @OnClick(R.id.button) void jumlah() {
-        Toast.makeText(this, "sfsdf", Toast.LENGTH_SHORT).show();
+        int angka1 = Integer.parseInt(editText1.getText().toString());
+        int angka2 = Integer.parseInt(editText2.getText().toString());
+        int jumlah = angka1 + angka2;
+        txtHasil.setText("" + jumlah);
     }
 
     @Override
